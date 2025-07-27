@@ -3,20 +3,22 @@ This pull request reviews the code of the TextProcessing repository. The program
 
 ## 1. Is the Code Properly Documented/Commented?
 The code includes some helpful comments (like "Read all lines" and "Dictionary to hold word counts"), but documentation is limited and could be more comprehensive.
-### Needs Work?: Yes, moderate improvement is needed.
+### Needs Work?: 
+Yes, moderate improvement is needed.
 ### Suggestions:
 - Add a summary comment at the start of the Main method to explain what the program does.
 - Add comments for complex operations like the regex pattern used for cleaning text.
 
 ## 2. Does the Code Handle Errors Properly?
 The code includes basic error handling by checking if the file exists with File, but deeper error handling is missing.
-### Needs Work?: Yes, moderate improvement is needed.
+### Needs Work?: 
+Yes, moderate improvement is needed.
 ### Suggestions:
 - Use a try-catch block for File.ReadAllLines to handle exceptions like IOException.
 - Check if Console.ReadLine() input is null or empty.
 - Handle empty or unreadable files gracefully.
 
-## 3. Suggestions for Improvement (Seven Aspects)
+## 3. Suggestions for Improvement
 
 ### Naming:
 Variable names like wordCounts, filePath, lines, cleanedLine, and words are descriptive, which is good. However, pair in the output loop is generic and could be more specific.
